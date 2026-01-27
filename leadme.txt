@@ -6,9 +6,9 @@
 
 
 下記2ページのコーディングになります。
-
+宅地品質
 https://www.figma.com/proto/Jlph0WTnbvRoxb2yA73Vew/%E4%BD%8F%E5%8F%8B%E4%B8%8D%E5%8B%95%E7%94%A3%EF%BC%9ACITY-GARDEN-%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA1?page-id=314%3A469&node-id=348-4790&p=f&viewport=-671%2C-122%2C0.28&t=fC5mnAqM7HtkZO6j-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=314%3A474
-
+邸宅品質
 https://www.figma.com/proto/Jlph0WTnbvRoxb2yA73Vew/%E4%BD%8F%E5%8F%8B%E4%B8%8D%E5%8B%95%E7%94%A3%EF%BC%9ACITY-GARDEN-%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA1?page-id=314%3A469&node-id=368-2425&p=f&viewport=-671%2C-122%2C0.28&t=fC5mnAqM7HtkZO6j-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=314%3A474
 
 https://tochi.sumitomo-rd.co.jp/
@@ -18,11 +18,12 @@ https://tochi.sumitomo-rd.co.jp/
 ページ用のcss、jsを追加する作りにしほしいです。
 
 
+【Git対象ページ】
 /takeuchi/index.html
 /teitaku/index.html
 [画像、css、js]
 assets内
-既存のcssは読み込ませてあります。
+既存のcss、jsはフルパスで読み込ませてあります。
 今回新規追加するページのcss、jsを新規で作成してください。
 フォントサイズなどはremで可変になります。
 https://tochi.sumitomo-rd.co.jp/
