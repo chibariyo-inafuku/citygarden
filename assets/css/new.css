@@ -1,0 +1,273 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px 40px;
+    margin-top: 30px;
+    z-index: 12;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.nav-list li {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Shippori Mincho", serif;
+    color: #fff;
+}
+
+
+.new_contents {
+    background: #D9D9D9;
+}
+
+.mv {
+    position: relative;
+    line-height: 0;
+}
+
+.mv-content {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-inline: 100px;
+}
+
+.mv-smtext {
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.mv-bigtxt {
+    color: var(--ffffff, #FFF);
+    font-size: 85px;
+    font-weight: 500;
+    line-height: 85px;
+}
+
+.content {
+    position: relative;
+    padding-bottom: 250px;
+
+}
+
+.content__image {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.content__image img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    transition: filter 0.6s ease;
+    filter: blur(0);
+}
+
+.content.is-active .content__image img {
+    filter: blur(15px);
+}
+
+.content__container {
+    position: relative;
+    z-index: 2;
+    max-width: 1460px;
+    width: 100%;
+    margin-inline: auto 0;
+    background-color: #fff;
+     margin-top: -100px; 
+    padding: 138px 140px 150px 113px;
+}
+
+
+.content__container.p-0 {
+    padding: 0;
+}
+
+.content__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 100px;
+}
+
+/* .content__wrap {
+    min-height: 100vh;
+} */
+
+.content__left {
+    width: 97px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+
+.content__right {
+    flex: 1;
+}
+
+.content__right.flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 69px;
+
+}
+
+.content__right-ttl {
+    color: #000;
+    font-feature-settings: 'palt' on;
+    font-family: "Shippori Mincho", serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 80px;
+}
+
+.content__right-ttl .sm {
+    font-size: 33px;
+    display: inline-block;
+    line-height: 31px;
+}
+
+.content__right-des {
+    color: #000;
+    font-family: "Shippori Mincho", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 39px;
+    margin-bottom: 50px;
+}
+
+.content__right-img {
+    max-width: 707px;
+    width: 100%;
+    margin-inline: auto 0;
+}
+
+.content__right-left {
+    max-width: 378px;
+    width: 100%;
+}
+
+.content__num {
+    color: #000;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.content__line {
+    width: 2px;
+    height: 100%;
+    background: #000;
+    display: block;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.content__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 160px;
+}
+
+.content__card:last-of-type {
+    margin-bottom: 0;
+}
+
+.content__card-left {
+    max-width: 200px;
+    width: 100%;
+}
+
+.content__card-right {
+    flex: 1;
+}
+
+.content__card-ttl {
+    color: #000;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 40px;
+}
+
+.content__card-des {
+    color: #1D1D1D;
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.content-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 20px;
+
+}
+
+.content-list:last-of-type {
+    margin-bottom: 0;
+}
+
+.content__list-ttl {
+    color: #FFF;
+    font-family: "EB Garamond";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 25px;
+}
+
+.content__list-num {
+    color: #FFF;
+    text-align: center;
+    font-family: "EB Garamond";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.content__list-des {
+    color: #FFF;
+    font-family: "Shippori Mincho";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.content__list-line {
+    height: -webkit-fill-available;
+    width: 1px;
+    background: #fff;
+    margin-block: 5px 6px;
+    display: block;
+}
