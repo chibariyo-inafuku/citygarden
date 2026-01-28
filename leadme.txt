@@ -18,6 +18,9 @@ https://tochi.sumitomo-rd.co.jp/
 共通のcssはサイト共通のものを使いつつ
 ページ用のcss、jsを追加する作りにしほしいです。
 
+【デザインデータ】
+https://22.gigafile.nu/0202-f1129ec15bfd2da578485fb0da43b0060
+
 
 【Git対象ページ】
 /takeuchi/index.html
