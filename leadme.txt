@@ -61,3 +61,29 @@ https://tochi.sumitomo-rd.co.jp/
 ・取り急ぎPCデザインのみで、SPについては下層ページ(宅地/邸宅)木曜日終日/TOPページは週明けで共有いたします。
 
 
+【フォントサイズの指定】
+デザインが320pxで作成されておりますので、今のフォントサイズとあわせるため、
+例えば、デザインで10pxのものは、1.17remで設定してください。
+以下フォントサイズ一覧表になります。
+px相当	rem
+10px	1.17rem
+11px	1.29rem
+12px	1.41rem
+13px	1.52rem
+14px	1.64rem
+15px	1.76rem
+16px	1.88rem
+17px	1.99rem
+18px	2.11rem
+19px	2.23rem
+20px	2.35rem
+21px	2.46rem
+22px	2.58rem
+23px	2.70rem
+24px	2.81rem
+25px	2.93rem
+26px	3.05rem
+27px	3.16rem
+28px	3.28rem
+29px	3.40rem
+30px	3.52rem
