@@ -97,3 +97,9 @@ https://www.figma.com/proto/Jlph0WTnbvRoxb2yA73Vew/%E4%BD%8F%E5%8F%8B%E4%B8%8D%E
 
 ▼ メイクデータ
 https://16.gigafile.nu/0203-m9c8971ccae753db80920dcd0bb476a72
+
+
+【明朝体について】
+既存サイトでは、Noto serif jpで設定していますが、
+今回頂いたデザインでは、Shippori Minchoが使用されておりました。
+今回作成分に関しましては、Shippori Minchoを使用してください。
