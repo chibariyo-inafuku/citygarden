@@ -87,3 +87,13 @@ px相当	rem
 28px	3.28rem
 29px	3.40rem
 30px	3.52rem
+
+【デザイン更新】
+■PC：1280px
+https://www.figma.com/proto/Jlph0WTnbvRoxb2yA73Vew/%E4%BD%8F%E5%8F%8B%E4%B8%8D%E5%8B%95%E7%94%A3%EF%BC%9ACITY-GARDEN-%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA1?page-id=0%3A1&node-id=867-2587&viewport=447%2C-410%2C0.06&t=J2ywvq0XSvBByEhD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=867%3A2587
+
+■SP：320px
+https://www.figma.com/proto/Jlph0WTnbvRoxb2yA73Vew/%E4%BD%8F%E5%8F%8B%E4%B8%8D%E5%8B%95%E7%94%A3%EF%BC%9ACITY-GAR
+
+▼ メイクデータ
+https://16.gigafile.nu/0203-m9c8971ccae753db80920dcd0bb476a72
