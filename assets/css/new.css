@@ -403,6 +403,7 @@ img {
     object-fit: cover;
     transition: filter 0.6s ease;
     filter: blur(0);
+    transform: scale(1.1);
     /* initially clear */
 }
 
@@ -415,7 +416,7 @@ img {
 .content__container {
     position: relative;
     z-index: 2;
-    max-width: 1460px;
+    max-width: 100%;
     width: 100%;
     margin-inline: auto 0;
     background-color: #fff;

@@ -193,60 +193,60 @@
           </div>
           <div class="only-pc">
             <p class="content__list-ttl">CONTENTS</p>
-            <a href="#apartment" class="content-list">
+            <div class="content-list">
               <p class="content__list-num">01</p>
               <span class="content__list-line"></span>
               <p class="content__list-des"><span class="sm">マンションで培った</span><br>
                 ものづくり思想を受け継ぐ、際立つ外観デザイン</p>
-            </a>
-            <a href="#advantage" class="content-list">
+            </div>
+            <div class="content-list">
               <p class="content__list-num">02</p>
               <span class="content__list-line"></span>
               <p class="content__list-des"><span class="sm">住友不動産のスケールメリットを活かした</span><br>
                 高性能・高品質な住宅設備</p>
-            </a>
-            <a href="#zeh" class="content-list">
+            </div>
+            <div class="content-list">
               <p class="content__list-num">03</p>
               <span class="content__list-line"></span>
               <p class="content__list-des"><span class="sm">高断熱のZEHが標準仕様</span><br>
                 安心して長く住める高性能住宅</p>
-            </a>
-            <a href="#shape" class="content-list">
+            </div>
+            <div class="content-list">
               <p class="content__list-num">04</p>
               <span class="content__list-line"></span>
               <p class="content__list-des"><span class="sm">お客様の希望を形にする</span><br>
                 ハウジングデザインシステム</p>
-            </a>
+            </div>
           </div>
         </div>
       </div>
       <div class="only-sp bg-white content-listwrp">
-        <a href="#apartment" class="content-list">
+        <div class="content-list">
           <p class="content__list-num">01</p>
           <span class="content__list-line"></span>
           <p class="content__list-des"><span class="sm">マンションで培った</span><br>
             ものづくり思想を受け継ぐ、<br>
             際立つ外観デザイン</p>
-        </a>
-        <a href="#advantage" class="content-list">
+        </div>
+        <div class="content-list">
           <p class="content__list-num">02</p>
           <span class="content__list-line"></span>
           <p class="content__list-des"><span class="sm">住友不動産のスケールメリットを
               活かした</span><br>
             高性能・高品質な住宅設備</p>
-        </a>
-        <a href="#zeh" class="content-list">
+        </div>
+        <div class="content-list">
           <p class="content__list-num">03</p>
           <span class="content__list-line"></span>
           <p class="content__list-des"><span class="sm">高断熱のZEHが標準仕様</span><br>
             安心して長く住める高性能住宅</p>
-        </a>
-        <a href="#shape" class="content-list">
+        </div>
+        <div class="content-list">
           <p class="content__list-num">04</p>
           <span class="content__list-line"></span>
           <p class="content__list-des"><span class="sm">お客様の希望を形にする</span><br>
             ハウジングデザインシステム</p>
-        </a>
+        </div>
       </div>
 
       <div class="content">
@@ -957,10 +957,16 @@
     </div>
   </main>
   <div id="tcfooter">
+    <div class="footer">
+      <div class="footer__left">
+        <img src="../assets/img/new_common/footer-icon.svg" width="275" height="76" loading="lazy" />
+      </div>
+      <div class="footer__right">
+        <img src="../assets/img/new_common/footer-icon2.svg" width="275" height="76" loading="lazy" />
+      </div>
+    </div>
     <p class="tccopyright">Copyright (C) 2025 Sumitomo Realty &amp; Development Co., Ltd.</p>
-    <div class="flg0"><a href="/"><img
-          src="https://tochi.sumitomo-rd.co.jp/wp-content/themes/custom_home/assets/img/common/logo_new.png"
-          alt="住友不動産の分譲戸建・宅地"></a></div>
+
   </div>
   <!--<div id="page_top"><a href="#"><img src="https://tochi.sumitomo-rd.co.jp/wp-content/themes/custom_home/assets/img/common//totop.png" alt="TOPへ戻る"></a></div>-->
   <script>
@@ -1052,7 +1058,7 @@
       };
     } else {
       observerOptions = {
-        threshold: 0.2,
+        threshold: 0.8,
       };
     }
 
@@ -1092,7 +1098,46 @@
       text-decoration: none;
     }
 
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+    }
+
+    #tcfooter {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+
+    #tcfooter .tccopyright {
+      color: #000;
+      text-align: right;
+      font-family: "Shippori Mincho", serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      margin-top: 26px;
+    }
+
     @media (max-width: 767px) {
+      .footer {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-end;
+      }
+      #tcfooter{
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      #tcfooter .tccopyright {
+        font-size: 10px;
+        text-align: justify;
+        margin-top: 20px;
+      }
+
       #page_top {
         width: 50px;
         height: 50px;
