@@ -1,0 +1,1551 @@
+.content__right.teikatu {
+  max-width: 100%;
+  width: 100%;
+
+}
+
+.teikatu.swiper-wrapper {
+  max-width: 1027px;
+  width: 100%;
+  padding-bottom: 10.8rem;
+}
+
+@media (max-width:1500px) {
+  .teikatu.swiper-wrapper {
+    max-width: 900px;
+  }
+}
+
+@media (max-width:991px) {
+  .teikatu.swiper-wrapper {
+    padding-bottom: 14.8rem;
+  }
+}
+
+@media (max-width:767px) {
+  .teikatu.swiper-wrapper {
+    padding-bottom: 10.08rem;
+  }
+}
+
+.teikatu.swiper-wrapper.pb20 {
+  padding-bottom: 2rem;
+}
+
+.teikatu .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.teikatu .swiper-pagination-bullet-active {
+  background-color: black !important;
+  opacity: 1;
+}
+
+.teikatu .swiper-buttons-progress {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  max-width: 1030px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 7.4rem;
+  height: 58px;
+}
+
+.teikatu .swiper-pagination {
+  flex: 1;
+  position: static !important;
+}
+
+.teikatu .swiper-button-flex {
+  display: flex;
+  gap: 6px;
+}
+
+.teikatu .swiper-button-prev,
+.teikatu .swiper-button-next {
+  position: static !important;
+  margin: 0;
+  width: 4rem;
+  height: 4rem;
+}
+
+.teikatu .custom-bar {
+  width: 131px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.teikatu .swiper-button-next.custom-next,
+.teikatu .swiper-button-prev.custom-prev {
+  position: static;
+  cursor: pointer;
+  background-color: #000;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: unset;
+  flex-shrink: 0;
+}
+
+
+.teikatu .custom-next img,
+.teikatu .custom-prev img {
+  width: 23px;
+  height: auto;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  display: none;
+}
+
+.teikatu .custom-next,
+.teikatu .custom-prev {
+  opacity: 1 !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
+
+.teikatu .swiper-pagination-horizontal.progressbar {
+  height: 1px !important;
+}
+
+.teikatu .progressbar .swiper-pagination-progressbar-fill {
+  background: #000;
+}
+
+.teikatu.swiper-button-next {
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+
+.content__card-title {
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  margin-block: 9.2rem 5rem;
+}
+
+.teikatu .content__card-des {
+  margin-bottom: 9rem;
+}
+
+
+.teikatu__zeh {
+  background-color: #313131;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 5rem 0px 5rem 8.2rem;
+
+  @media (max-width:1299px) {
+    padding: 5rem 0px 5rem 4.2rem;
+  }
+
+  @media (max-width:767px) {
+    flex-direction: column;
+    padding: 3.52rem 2.35rem;
+  }
+
+}
+
+.teikatu__zeh-title {
+  width: 19rem;
+  height: 19rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width:767px) {
+    width: 15.53rem;
+    height: 15.53rem;
+    justify-content: flex-end;
+    padding-bottom: 2.82rem;
+  }
+}
+
+.teikatu__zeh-title-text {
+  position: relative;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 5.9rem;
+  font-weight: 400;
+  line-height: 5.9rem;
+
+  @media (max-width:767px) {
+    font-size: 4.23rem;
+    line-height: 4.23rem;
+  }
+}
+
+.teikatu__zeh-title-text::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/teitaku/icon-zeh.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3.2rem;
+  height: 2.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+
+  @media (max-width:991px) {
+    width: 3.88rem;
+    height: 2.46rem;
+    top: -24px;
+  }
+
+  @media (max-width:767px) {
+    width: 3.88rem;
+    height: 2.46rem;
+    top: -24px;
+  }
+
+}
+
+
+.teikatu__zeh-title-sub {
+  text-align: center;
+  font-family: "Shippori Mincho", serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  display: block;
+  margin-top: 4px;
+
+  @media (max-width:767px) {
+    font-size: 2.23rem;
+  }
+}
+
+.teikatu__zeh-definition {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.8rem;
+}
+
+.teikatu__zeh-word {
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 100%;
+
+  @media (max-width:1299px) {
+    font-size: 5rem;
+  }
+
+  @media (max-width:767px) {
+    font-size: 4rem;
+  }
+}
+
+.teikatu__zeh-equals {
+  color: #FFF;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 60px */
+
+  @media (max-width:767px) {
+    font-size: 4.71rem;
+  }
+}
+
+.teikatu__zeh-full-name {
+  color: #FFF;
+  font-feature-settings: 'palt' on;
+  font-family: "Shippori Mincho", serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width:1299px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width:767px) {
+    font-size: 2.93rem;
+  }
+
+}
+
+.teikatu__zeh-description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8.5rem;
+
+  @media (max-width:1299px) {
+    gap: 4.5rem;
+  }
+
+  @media (max-width:657px) {
+    flex-direction: column;
+    ;
+  }
+}
+
+.teikatu__zeh-english {
+  color: #FFF;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  width: 91px;
+  margin-inline: 1.4rem;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding-block: 9px 7px;
+  margin-top: 19px;
+
+  @media (max-width:1299px) {
+    margin-top: unset;
+  }
+
+  @media (max-width:767px) {
+    font-size: 1.41rem;
+    line-height: 1.64rem;
+    padding-block: 5px;
+    margin-top: 5px;
+    width: 7.41rem;
+    margin-inline: 0;
+  }
+}
+
+.teikatu__zeh-text {
+  color: var(--ffffff, #FFF);
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-top: 19px;
+
+  @media (max-width:767px) {
+    font-size: 1.88rem;
+    line-height: 200%;
+  }
+}
+
+.teikatu__standard {
+  background: #2B2B2B;
+
+}
+
+.teikatu__standard-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-top: -1px;
+
+  @media (max-width:991px) {
+    gap: 15px;
+    justify-content: space-between;
+    padding-left: 5rem;
+  }
+
+  @media (max-width:767px) {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-block: 30px 0;
+    padding-left: 0;
+  }
+
+}
+
+.teikatu__standard-title {
+  color: #FFF;
+  font-family: "Shippori Mincho", serif;
+  font-size: 3.1rem;
+  font-weight: 500;
+  line-height: 100%;
+  margin-left: 2.1rem;
+  text-align: start;
+
+  @media (max-width:767px) {
+    font-size: 2.35rem;
+    text-align: center;
+    margin-left: unset;
+    line-height: 3.5rem;
+
+  }
+}
+
+.teikatu__standard-rowwrap {
+  @media (max-width:1299px) {
+    padding-left: 5rem;
+  }
+
+  @media (max-width:991px) {
+    padding-left: 0rem;
+  }
+}
+
+.teikatu__standard-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin-top: 30px;
+  width: 75.8rem;
+  height: auto;
+
+  @media (max-width:1299px) {
+    justify-content: flex-start;
+
+  }
+
+  @media (max-width:991px) {
+    width: 100%;
+  }
+
+
+  /* position: relative; */
+
+
+  @media (max-width:767px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.teikatu__standard-col-title {
+  color: #FFF;
+  text-align: center;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 100%;
+  border-radius: 18.5px;
+  border: 1px solid #FFF;
+  padding: 1rem 2.2rem;
+  width: 100%;
+
+  @media (max-width:767px) {
+    width: fit-content;
+    margin-inline: auto;
+    padding: 1.17rem 2.58rem;
+    font-size: 1.64rem;
+  }
+
+}
+
+.teikatu__standard-col-title span {
+  font-size: 1.8rem;
+
+  @media (max-width:767px) {
+    font-size: 2.11rem;
+  }
+}
+
+
+.teikatu__standard-col-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 39px;
+
+  @media (max-width:991px) {
+    gap: 28px;
+  }
+
+  @media (max-width:767px) {
+    gap: 16px;
+  }
+}
+
+
+.teitaku__standard-col-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 40px; */
+
+
+  position: relative;
+
+  @media (max-width:767px) {
+    flex-direction: column;
+  }
+}
+
+
+.teikatu__standard-plus {
+  position: absolute;
+  top: 30%;
+
+  @media (max-width:767px) {
+    top: 26%;
+  }
+}
+
+.teikatu__standard-col-image {
+  max-width: 12.6rem;
+  width: 100%;
+  height: auto;
+  margin-block: 17px 25px;
+
+  @media (max-width:767px) {
+    max-width: 11.29rem;
+    margin-block: 17px 19px;
+  }
+}
+
+
+
+.teitaku__standard-col-box-title {
+  color: #000;
+  text-align: center;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 1rem;
+  background: #FFF;
+  width: 15.4rem;
+  height: 3.7rem;
+  position: relative;
+
+  @media (max-width:767px) {
+    padding: 1.17rem;
+    width: 14.35rem;
+    font-size: 2.11rem;
+    height: 4.35rem;
+  }
+}
+
+.teitaku__standard-col-box-title::before {
+  content: "";
+  position: absolute;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  top: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 1.4rem;
+  height: 1.4rem;
+
+}
+
+.teitaku__standard-col-box-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 175%;
+  margin-top: 7px;
+  letter-spacing: 0.18px;
+
+  @media (max-width:767px) {
+    font-size: 1.64rem;
+  }
+
+
+}
+
+
+.teikatu__standard-col-li {
+  color: #FFF;
+  text-align: justify;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 175%;
+  list-style: disc;
+
+  @media (max-width:767px) {
+    font-size: 1.64rem;
+  }
+}
+
+.teikatu__standard-border {
+  /* max-width: 24px;
+  width: 100%; */
+  /* position: absolute; */
+
+  top: 90px;
+  position: relative;
+  background: #2B2B2B;
+
+  max-width: 24px;
+  width: 100%;
+  height: 24px;
+  left: -12px;
+  height: 38px;
+  left: -12px;
+  padding-top: 8px;
+
+}
+
+
+.teikatu__standard-col {
+  position: relative;
+  border-right: 1px dashed #fff;
+  padding-inline: 1.5rem;
+
+  @media (max-width:767px) {
+    border-right: unset;
+    border-bottom: 1px dashed #fff;
+    padding-inline: unset;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+}
+
+.teikatu__standard-col:first-of-type {
+  padding-inline: 0 1.5rem;
+
+}
+
+.teikatu__standard-col:last-of-type {
+  border-right: unset;
+  padding-inline: 15px 0;
+
+  @media (max-width:767px) {
+    border-bottom: unset;
+    padding-inline: 0;
+  }
+}
+
+
+.teikatu__standard-col::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/teitaku/plus-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  right: -12px;
+  top: 28%;
+  background-color: #2B2B2B;
+  padding-block: 7px;
+
+  @media (max-width:767px) {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 97.1%;
+    padding-block: unset;
+    padding-inline: 7px;
+
+  }
+}
+
+.teikatu__standard-col:nth-of-type(2)::before {
+  background-image: url("../img/teitaku/equal-icon.svg");
+
+  @media (max-width:767px) {
+    top: 96.1%;
+
+  }
+
+}
+
+.teikatu__standard-col:last-of-type::before {
+  content: unset;
+}
+
+
+.teikatu__standard-col-value {
+  color: #FFF;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 15.5rem;
+  font-weight: 400;
+  line-height: 100%;
+
+  @media (max-width:767px) {
+    font-size: 18.23rem;
+    line-height: 77%;
+    margin-bottom: 10px;
+  }
+
+
+}
+
+.teikatu__standard-col-label {
+  color: #FFF;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  width: 100%;
+
+  @media (max-width:767px) {
+    font-size: 2.35rem;
+    margin-top: 1rem;
+  }
+}
+
+.teitaku__standard-col-desc {
+  color: #FFF;
+  text-align: center;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 16px;
+  padding-top: 15px;
+  border-top: 1px solid #fff;
+
+  /* @media (max-width:991px) {
+    font-size: 1.4rem;
+  } */
+
+  @media (max-width:767px) {
+    font-size: 1.88rem;
+  }
+}
+
+
+.teikatu__standard-image {
+  max-width: 398px;
+  width: 100%;
+  height: auto;
+  flex: 1;
+
+  img {
+    height: 461px;
+  }
+
+  @media (max-width:1299px) {
+    max-width: 251px;
+  }
+
+  @media (max-width:767px) {
+    max-width: 100%;
+
+    img {
+      height: auto;
+    }
+  }
+}
+
+
+.only-pc.big {
+  display: block !important;
+
+  @media (max-width:1299px) {
+    display: none !important;
+  }
+
+}
+
+.only-pc.pc {
+  display: none !important;
+
+  @media (max-width:1299px) {
+    display: block !important;
+  }
+
+  @media (max-width:767px) {
+    display: none !important;
+  }
+
+}
+
+
+
+.teikatu__points {
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 100px;
+
+
+}
+
+.teikatu__point-item {
+  width: calc(100% / 3 - 20px);
+}
+
+.teikatu__point-title {
+  color: #000;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.teikatu__point-number {
+  color: var(--000000, #000);
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+}
+
+.teikatu__point-text {
+  color: var(--000000, #000);
+  text-align: center;
+  font-feature-settings: 'palt' on;
+  font-family: "Shippori Mincho", serif;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.teikatu__carbon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-block: 5.9rem 7rem;
+}
+
+.teikatu__carbon-media,
+.teikatu__carbon-content {
+  width: 50%;
+}
+
+.teikatu__carbon-content {
+  background-color: #313131;
+  color: #FFF;
+  padding: 6.7rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.teikatu__carbon-item {
+  position: relative;
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-family: "Shippori Mincho", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding-bottom: 2.6rem;
+  margin-bottom: 1.7rem;
+}
+
+.teikatu__carbon-item:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.teikatu__carbon-item:last-of-type:after {
+  content: none;
+}
+
+.teikatu__carbon-item:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/teitaku/icon-arrowdown.svg");
+  background-position: center;
+  background-size: cover;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.9rem;
+  height: 0.9rem;
+  bottom: 0;
+
+}
+
+.teikatu__carbon-media {
+  position: relative;
+
+}
+
+.teikatu__carbon-imgtxts {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.teikatu__carbonimgtxt {
+  position: relative;
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-feature-settings: 'palt' on;
+  font-family: "Shippori Mincho", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding-bottom: 1.3rem;
+  margin-bottom: 3rem;
+  max-width: 178px;
+  width: 100%;
+}
+
+.teikatu__carbonimgtxt::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/teitaku/icon-underline.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.teikatu__carbon-trademark {
+  position: absolute;
+  right: 1.7rem;
+  top: -3.7rem;
+}
+
+.teikatu__solar {
+  border: 1px solid #313131;
+  margin-bottom: 100px;
+}
+
+.teikatu__solar-title {
+  color: #FFF;
+  background-color: #313131;
+  text-align: center;
+  font-feature-settings: 'palt' on;
+  font-family: "Shippori Mincho", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  padding-block: 2rem;
+}
+
+.teikatu__solar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 4rem;
+}
+
+.teikatu__solar-item {
+  color: var(--000000, #000);
+  text-align: center;
+  font-feature-settings: 'palt' on;
+  font-family: "Shippori Mincho", serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.9rem;
+}
+
+.teikatu__solar-item:nth-of-type(2) {
+  padding-inline: 4rem;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.teikatu__shift-text {
+  color: var(--000000, #000);
+  text-align: center;
+  font-feature-settings: 'palt' on;
+  font-family: "Shippori Mincho", serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 6.7rem;
+}
+
+.teikatu__shift-highlight {
+  font-size: 2rem;
+  line-height: 2.9rem;
+  display: inline-block;
+}
+
+.teikatu__customer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8.2rem;
+  max-width: 989px;
+  width: 100%;
+  margin-inline: 0 auto;
+}
+
+.teikatu__customer-left {
+  max-width: 215px;
+  width: 100%;
+}
+
+.teikatu__customer-right {
+  flex: 1;
+  width: 100%;
+}
+
+.teikatu__customer-title {
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-bottom: 8rem;
+}
+
+.teikatu__customer-text {
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.9rem;
+  padding-bottom: 2.8rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.teikatu__customer-extra {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.teikatu__customer-extra-text {
+  color: #1D1D1D;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.3rem;
+  max-width: 359px;
+  width: 100%;
+}
+
+.teikatu__process {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8.32rem;
+  max-width: 1026px;
+  width: 100%;
+  margin: auto 0;
+  margin-block: 6rem 10rem;
+}
+
+.teikatu__process-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.teikatu__process-text {
+  color: #000;
+  text-align: center;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
+.teikatu__process-image {
+  position: relative;
+}
+
+.teikatu__process-num {
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background-color: #000;
+  color: var(--ffffff, #FFF);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.teikatu__process-image::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/teitaku/icon-rightarrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 2.1rem;
+}
+
+.teikatu__process-step:last-of-type .teikatu__process-image::after {
+  content: none;
+}
+
+.teikatu__home-ttl {
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.content__rigtht-subtitle {
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  margin-bottom: 60px;
+}
+
+
+.teikatu__right-contents {
+  padding-left: 10rem;
+}
+
+.teikatu__container {
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 10rem 12.5rem;
+}
+
+@media (max-width:1599px) {
+  .teikatu__container {
+    max-width: 100%;
+    width: 100%;
+    margin-inline: 0 auto;
+    padding-inline: 10rem 1.5rem;
+  }
+
+  .teikatu__carbon-content {
+    padding: 4.7rem 1rem;
+  }
+}
+
+@media (max-width:1299px) {
+  .content__card-title {
+    margin-block: 7.3rem 5rem;
+  }
+
+  .teikatu .content__card-des {
+    margin-bottom: 10.4rem;
+    line-height: 3.9rem;
+  }
+
+  .teikatu.swiper-wrapper {
+    max-width: 100%;
+  }
+
+  .content__right.teikatu {
+    overflow: hidden;
+  }
+
+  .content__container.p-0 {
+    padding: 13.8rem 0px 15rem 6rem;
+  }
+
+  .teikatu .swiper-buttons-progress {
+    gap: 7.4rem;
+  }
+
+  .teikatu .swiper-buttons-progress {
+    max-width: 992px;
+  }
+
+  .teikatu__point-text {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+  }
+
+
+
+
+  .teikatu__solar-content {
+    padding: 5rem 2rem;
+  }
+
+  .teikatu__solar {
+    margin-bottom: 8rem;
+  }
+
+  .teikatu__customer-title {
+    margin-bottom: 6rem;
+  }
+
+  .teikatu__customer {
+    gap: 6rem;
+  }
+
+  .teikatu__right-contents {
+    padding-left: 4.3rem;
+  }
+
+  .teikatu__container {
+    padding-inline: 6rem 4rem;
+  }
+
+
+  .teikatu__carbon-content {
+    padding: 5.7rem 2rem;
+  }
+  .teikatu__circlewrap{
+    padding-right: 2rem;
+  }
+   .teikatu__customer{
+    padding-right: 2rem;
+  }
+
+}
+
+@media (max-width:991px) {
+
+  .teikatu__right-contents {
+    padding-left: 4.3rem;
+  }
+
+  .teikatu__container {
+    padding-inline: 4.3rem 1rem;
+  }
+
+  .teikatu__carbon-content {
+    padding: 5.7rem 1rem;
+  }
+ 
+}
+
+
+@media (max-width:767px) {
+  .pb-80 {
+    padding-bottom: 0;
+  }
+
+  .content__container.p-0 {
+    padding: 7.12rem 0px 7.12rem 2.35rem;
+  }
+
+  .teikatu .swiper-buttons-progress {
+    gap: 1.64rem;
+  }
+
+  .teikatu .content__card-title {
+    margin-block: 4.72rem 2.35rem;
+    font-size: 2.11rem;
+    line-height: 3.16rem;
+  }
+
+  .teikatu .content__card-des {
+    padding-right: 2.35rem;
+    margin-bottom: 3.52rem;
+  }
+
+  .teikatu .content__right-ttl {
+    padding-right: 2rem;
+  }
+
+  .pl {
+    padding-left: 0rem;
+  }
+
+  .teikatu__points {
+    flex-direction: column;
+    /* padding-right: 2.35rem; */
+    gap: 4.72rem;
+    margin-top: 4.72rem;
+  }
+
+  .teikatu__point-item {
+    width: 100%;
+  }
+
+  .teikatu__point-title {
+    font-size: 1.88rem;
+    padding-bottom: 1.17rem;
+    margin-bottom: 1.17rem;
+  }
+
+  .teikatu__point-number {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .teikatu__point-text {
+    font-size: 2.11rem;
+    line-height: 3.16rem;
+  }
+
+  .teikatu__carbon {
+    flex-direction: column;
+    /* padding-right: 2.35rem; */
+    margin-block: 10.48rem 7rem;
+  }
+
+  .teikatu__carbon-media,
+  .teikatu__carbon-content {
+    width: 100%;
+  }
+
+  .teikatu__carbonimgtxt {
+    font-size: 1.64rem;
+    line-height: 2.46rem;
+    margin-bottom: 1.76rem;
+    max-width: 12.28rem;
+  }
+
+  .teikatu__carbon-imgtxts {
+    gap: 2.58rem;
+  }
+
+  .teikatu__carbon-trademark {
+    z-index: 2;
+    width: 107px;
+    height: 107px;
+    right: 2.7rem;
+    top: -7.96rem;
+  }
+
+  .teikatu__carbon-content {
+    padding: 3.52rem 0.35rem;
+  }
+
+  .teikatu__carbon-item {
+    font-size: 1.88rem;
+    line-height: 2.81rem;
+    padding-bottom: 1.99rem;
+    margin-bottom: 1.17rem;
+  }
+
+  /* .teikatu__solar {
+    margin-right: 2.35rem;
+  } */
+
+  .teikatu__solar-title {
+    font-size: 2.35rem;
+    padding-block: 2.35rem;
+    line-height: 3.52rem;
+  }
+
+  .teikatu__solar-content {
+    flex-direction: column;
+    gap: 1.76rem;
+    padding: 2.35rem 2.28rem 3.52rem;
+  }
+
+  .teikatu__solar-item {
+    font-size: 1.88rem;
+    line-height: 2.70rem;
+  }
+
+  .teikatu__solar-item:nth-of-type(2) {
+    padding-inline: 0;
+    padding-block: 1.76rem;
+    border-left: unset;
+    border-right: unset;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  /* 
+  .teikatu__shift {
+    padding-right: 2.35rem;
+  } */
+
+
+
+  .teikatu__shift-highlight {
+    font-size: 1.88rem;
+    line-height: 2.70rem;
+    letter-spacing: -0.07em;
+  }
+
+  .teikatu__shift-text {
+    font-size: 2.93rem;
+    line-height: 4.37rem;
+  }
+
+  .teikatu__customer {
+    flex-direction: column;
+    gap: 2.35rem;
+    padding-right: 2.35rem;
+  }
+
+  .teikatu__customer-title {
+    font-size: 2.11rem;
+    line-height: 3.16rem;
+    margin-bottom: 2.35rem;
+  }
+
+  .teikatu__customer-image {
+    max-width: 158px;
+  }
+
+  .teikatu__customer-text {
+    font-size: 1.88rem;
+    line-height: 3.76rem;
+  }
+
+  .teikatu__customer-extra {
+    flex-direction: column;
+    gap: 3.52rem;
+
+  }
+
+  .teikatu__customer-extra-text {
+    font-size: 1.88rem;
+    line-height: 3.88rem;
+    width: 100%;
+  }
+
+  .teikatu__home-ttl {
+    font-size: 2.11rem;
+  }
+
+  .teikatu__circlewrap {
+    margin-top: 7.12rem;
+  }
+
+  .teikatu__process {
+    gap: 30px 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* padding-right: 2.35rem; */
+    margin-block: 3.52rem;
+  }
+
+  .teikatu__process-image {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .teikatu__process-step {
+    width: calc(100% / 2 - 20px);
+    gap: 8px;
+  }
+
+  .teikatu__process-image::after {
+    right: -2.35rem;
+  }
+
+  .teikatu__process-step:nth-of-type(2) .teikatu__process-image::after {
+    content: none;
+  }
+
+  .teikatu__process-step:nth-of-type(4) .teikatu__process-image::after {
+    content: none;
+  }
+
+  .teikatu__process-text {
+    font-size: 1.88rem;
+  }
+
+  .content__rigtht-subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.7rem;
+    margin-bottom: 30px;
+  }
+
+  .teikatu .custom-bar {
+    padding-right: 2rem;
+  }
+
+  .teikatu .swiper-button-next.custom-next,
+  .teikatu .swiper-button-prev.custom-prev {
+    position: static;
+    cursor: pointer;
+    background-color: #000;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: unset;
+    flex-shrink: 0;
+  }
+
+  /* .content__container.p-0.zeh {
+    padding: 15rem 0px 15rem 0rem;
+  } */
+
+  .content__left.zeh,
+  .content__right-ttl.pl.zeh,
+  .content__rigtht-subtitle.pl.zeh {
+    padding-left: 2.35rem;
+  }
+
+  .teikatu__zeh-definition {
+    gap: 1.41rem;
+  }
+
+  .teikatu__right-contents {
+    padding-left: 2.35rem;
+  }
+
+  .teikatu__container {
+    padding-inline: 2.35rem;
+  }
+
+  .content__container.p-0.zeh {
+    padding: 0;
+  }
+
+  .content__num.zeh {
+    padding-left: 2.35rem;
+  }
+
+  .content__wrap.no-gap {
+    gap: 2.35rem;
+    padding-block: 7.12rem;
+  }
+    .teikatu__circlewrap{
+    padding-right: 2.35rem;
+  }
+  .teikatu__customer-extra-text{
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
