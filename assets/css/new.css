@@ -1,14 +1,10 @@
-/* body {
-    font-size: 62.5%;
-} */
 .new_contents {
     position: relative;
 }
 
 .adv__buttonwrap {
     position: fixed;
-
-    right: 10px;
+    right: 30px;
     bottom: 20px;
     z-index: 11;
     border: 1px solid #313131;
@@ -61,46 +57,21 @@
     width: 100%;
 }
 
-
-
-@media (max-width:767px) {
-    .adv__button-img {
-        max-width: 8.78rem;
-        width: 100%;
-    }
-
-    .adv__button {
-        gap: 1.05rem;
-        padding: 0.70rem 0px 0.70rem 0.70rem;
-    }
-
-    .adv__button-txt {
-        font-size: 1.52rem;
-        line-height: 1.99rem;
-        font-weight: 500;
-        letter-spacing: -0.091rem;
-    }
-
-    .adv__buttonwrap {
-        max-width: 23.99rem;
-    }
-
-    .adv__buttonwrap {
-        padding: 2px;
-    }
-
-    .adv__button-txt::after {
-        width: 2.35rem;
-        right: -29px;
-    }
+.adv__buttonwrap,
+.adv__mailwrap {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-
-
+.adv__buttonwrap.show,
+.adv__mailwrap.show {
+    opacity: 1;
+    visibility: visible;
+}
 
 .adv__mailwrap {
     position: fixed;
-
     left: 10px;
     bottom: 20px;
     z-index: 11;
@@ -140,6 +111,53 @@
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
+}
+.adv__button, .adv__mailwrap{
+    transition: all 0.25s ease;
+}
+.adv__button:hover , .adv__mailwrap:hover{
+  opacity: 0.7;
+}
+
+@media (max-width:767px) {
+    .adv__button-img {
+        max-width: 8.78rem;
+        width: 100%;
+    }
+
+    .adv__button {
+        gap: 1.05rem;
+        padding: 0.70rem 0px 0.70rem 0.70rem;
+    }
+
+    .adv__button-txt {
+        font-size: 1.52rem;
+        line-height: 1.99rem;
+        font-weight: 500;
+        letter-spacing: -0.091rem;
+    }
+
+    .adv__buttonwrap {
+        max-width: 23.99rem;
+        right: 10px;
+    }
+
+    .adv__buttonwrap {
+        padding: 2px;
+    }
+
+    .adv__button-txt::after {
+        width: 2.35rem;
+        right: -29px;
+    }
+
+    .adv__mailwrap {
+        bottom: 5px;
+    }
+
+    .adv__buttonwrap {
+        bottom: 5px;
+    }
 }
 
 .sns-area {
@@ -185,7 +203,7 @@ img {
 
 .nav.scrolled {
     position: fixed;
-     transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
     background-color: #fff;
     margin-top: 0;
     padding: 14px 30px 11px 30px;
@@ -662,7 +680,7 @@ img {
     }
 
     .content__wrap {
-        gap: 4.3rem;
+        gap: 6rem;
     }
 
     .content__right-ttl .sm {
@@ -686,10 +704,24 @@ img {
     }
 
     .logo {
-        max-width: 500px;
+        max-width: 69rem;
+        width: 100%;
+    }
+
+    .nav {
+
+        padding-inline: 2rem;
+
+    }
+}
+
+@media (max-width:1279px) {
+    .logo {
+        max-width: 50rem;
         width: 100%;
     }
 }
+
 
 @media (max-width:1199px) {
     .content__container {
@@ -720,7 +752,7 @@ img {
     }
 
     .logo {
-        max-width: 400px;
+        max-width: 52rem;
         width: 100%;
     }
 
@@ -738,7 +770,7 @@ img {
     }
 
     .logo {
-        max-width: 300px;
+        max-width: 337px;
         width: 100%;
     }
 

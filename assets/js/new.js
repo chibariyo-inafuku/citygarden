@@ -10,7 +10,7 @@ const logo1680 = document.getElementById("logo1680");
 const logo1680Black = document.getElementById("logo1680Black");
 
 function updateLogo() {
-  const isScrolled = window.scrollY > 860;   
+  const isScrolled = window.scrollY > 860;
   const width = window.innerWidth;
 
   // navbar background
@@ -62,3 +62,16 @@ updateLogo();
 
 
 const hamburger = document.querySelector(".hamburger"); const spMenu = document.querySelector(".sp-menu"); const hamburgerIcon = document.getElementById("hamburgerIcon"); const closeIcon = document.getElementById("closeIcon"); hamburger.addEventListener("click", () => { spMenu.classList.add("active"); hamburger.classList.add("active"); hamburgerIcon.src = "../assets/img/new_common/icon-hamburger-close.svg"; }); closeIcon.addEventListener("click", () => { spMenu.classList.remove("active"); hamburger.classList.remove("active"); hamburgerIcon.src = "../assets/img/new_common/icon-hamburger.svg"; })
+
+const advButton = document.querySelector(".adv__buttonwrap");
+const advMail = document.querySelector(".adv__mailwrap");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    advButton.classList.add("show");
+    advMail.classList.add("show");
+  } else {
+    advButton.classList.remove("show");
+    advMail.classList.remove("show");
+  }
+});
