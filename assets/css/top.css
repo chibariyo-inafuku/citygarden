@@ -2,7 +2,8 @@
     position: relative;
     z-index: 51;
 }
-.top .nav.scrolled{
+
+.top .nav.scrolled {
     top: 0;
 }
 
@@ -17,38 +18,59 @@
 /* .top a.logo {
     display: none;
 } */
- .top #logo1280{
+.top #logo1280 {
     visibility: hidden;
- }
-@media (max-width:767px) {
- .top a.logo {
-    display: block;
-} 
-#logoSpBlack {
-    display: none;
-} 
-.top .nav{
-    justify-content: space-between !important;
 }
-.top #logoSpBlack{
-    width: 160px;
+
+.top #logo1680Black {
+    max-width: 629px;
     margin: 0;
 }
+
+.top.adv__buttonwrap {
+    bottom: 150px;
+}
+
+@media (max-width:1299px) {
+    .top .nav.scrolled{
+        padding: 14px 10px 11px 12px;
+    }
+}
+
+@media (max-width:767px) {
+    .top a.logo {
+        display: block;
+    }
+
+    #logoSpBlack {
+        display: none;
+    }
+
+    .top .nav {
+        justify-content: space-between !important;
+    }
+
+    .top #logoSpBlack {
+        width: 160px;
+        margin: 0;
+    }
 
 }
 
 /* .palalax{
     background: unset !important;
 } */
- .archive #tcheader{
+.archive #tcheader {
     display: block !important;
- }
- .top #logo1680{
+}
+
+.top #logo1680 {
     display: none !important;
- }
- .top .only-pc{
+}
+
+.top .only-pc {
     width: 100%;
- }
+}
 
 
 .top .nav-list li a {
@@ -60,6 +82,7 @@
     justify-content: flex-end;
 
 }
+
 .top .nav-list {
     width: 100%;
     justify-content: flex-end;
@@ -256,10 +279,12 @@ header.top {
     .only-1280 {
         display: block;
     }
-    .card__des-sm{
+
+    .card__des-sm {
         line-height: 18px;
     }
-    .top__lifestyle-sharelink.w-331{
+
+    .top__lifestyle-sharelink.w-331 {
         margin-top: 5rem;
     }
 
@@ -478,9 +503,9 @@ header.top {
     margin-top: 7.9rem;
 }
 
-    #videoToggleBtn {
-        top: 6.569vw !important;
-    }
+#videoToggleBtn {
+    top: 6.569vw !important;
+}
 
 @media (max-width:1299px) {
     .card__flex {
@@ -505,7 +530,8 @@ header.top {
         font-weight: 500;
         line-height: 2.3rem;
     }
-     #videoToggleBtn {
+
+    #videoToggleBtn {
         top: 7.569vw !important;
     }
 }
@@ -549,7 +575,7 @@ header.top {
 
     .card__num {
         padding-right: 1.06rem;
-        font-size:2.93rem ;
+        font-size: 2.93rem;
 
     }
 
@@ -574,7 +600,7 @@ header.top {
     #videoToggleBtn {
         top: 80px !important;
     }
- 
+
 }
 
 
