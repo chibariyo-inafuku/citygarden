@@ -10,6 +10,22 @@
   padding-bottom: 10.8rem;
 }
 
+.teikatu .swiper__slide {
+  position: relative;
+}
+
+.teikatu .swiper-text {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #FFF;
+  text-shadow: 0 0 2px #000;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
 @media (max-width:1500px) {
   .teikatu.swiper-wrapper {
     max-width: 900px;
@@ -25,6 +41,18 @@
 @media (max-width:767px) {
   .teikatu.swiper-wrapper {
     padding-bottom: 10.08rem;
+  }
+
+  .teikatu .swiper-text {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #FFF;
+    text-shadow: 0 0 2px #000;
+    font-family: "Shippori Mincho", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
   }
 }
 
@@ -1231,10 +1259,12 @@
   .teikatu__carbon-content {
     padding: 5.7rem 2rem;
   }
-  .teikatu__circlewrap{
+
+  .teikatu__circlewrap {
     padding-right: 2rem;
   }
-   .teikatu__customer{
+
+  .teikatu__customer {
     padding-right: 2rem;
   }
 
@@ -1253,7 +1283,7 @@
   .teikatu__carbon-content {
     padding: 5.7rem 1rem;
   }
- 
+
 }
 
 
@@ -1540,10 +1570,12 @@
     gap: 2.35rem;
     padding-block: 7.12rem;
   }
-    .teikatu__circlewrap{
+
+  .teikatu__circlewrap {
     padding-right: 2.35rem;
   }
-  .teikatu__customer-extra-text{
+
+  .teikatu__customer-extra-text {
     width: 100%;
     max-width: 100%;
   }
