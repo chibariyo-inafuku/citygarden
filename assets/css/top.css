@@ -27,9 +27,9 @@
     margin: 0;
 }
 
-.top.adv__buttonwrap {
+/* .top.adv__buttonwrap {
     bottom: 150px;
-}
+} */
 
 @media (max-width:1299px) {
     .top .nav.scrolled{
