@@ -17,7 +17,7 @@ function updateLogo() {
 
   if (width < 768) {
     if (body.classList.contains("top")) {
-      scrollThreshold = 670;
+      scrollThreshold = 700;
     } else {
       scrollThreshold = 450;
     }
