@@ -10,10 +10,27 @@ const logo1680 = document.getElementById("logo1680");
 const logo1680Black = document.getElementById("logo1680Black");
 
 function updateLogo() {
-  const isScrolled = window.scrollY > 860;
   const width = window.innerWidth;
 
-  // navbar background
+  let scrollThreshold;
+  const body = document.body;
+
+  if (width < 768) {
+    if (body.classList.contains("top")) {
+      scrollThreshold = 700;
+    } else {
+      scrollThreshold = 450;
+    }
+  } else if (width >= 768 && width < 1300) {
+    scrollThreshold = 720;
+  } else {
+    scrollThreshold = 860;
+  }
+
+
+  const isScrolled = window.scrollY > scrollThreshold;
+
+
   if (isScrolled) {
     nav.classList.add("scrolled");
   } else {
@@ -56,6 +73,7 @@ function updateLogo() {
   }
 }
 
+
 window.addEventListener("scroll", updateLogo);
 window.addEventListener("resize", updateLogo);
 updateLogo();
@@ -67,7 +85,9 @@ const advButton = document.querySelector(".adv__buttonwrap");
 const advMail = document.querySelector(".adv__mailwrap");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 200) {
+  const scrollThreshold = window.innerWidth < 768 ? 200 : 20;
+
+  if (window.scrollY > scrollThreshold) {
     advButton.classList.add("show");
     advMail.classList.add("show");
   } else {
