@@ -145,6 +145,7 @@
         <li class="top-header-list"><a href="#">分譲宅地ラインナップ</a></li>
       </ul>
     </div> -->
+    <div class="mv-image"> <img src="./assets/img/top/mv.webp" width="1600" height="720" loading="lazy" /> </div>
 
 
     <div class="loading-video" id="video-loading">
@@ -156,6 +157,10 @@
     <button type="button" id="videoToggleBtn" aria-label="再生/停止"> <img id="videoToggleIcon"
         src="https://tochi.sumitomo-rd.co.jp/wp-content/themes/custom_home/assets/img/movie/play.png" alt="PLAY">
     </button>
+    <div class="video-btn">
+      <button id="skip">SKIP</button>
+      <button id="replay" class="hidden replay">REPLAY</button>
+    </div>
     <!-- VIDEO LOADING -->
 
     <!-- VIDEO LOADING -->
@@ -172,6 +177,10 @@
     const HIDE_CLASS = "video-toggle--hidden";
 
     let isPlaying = false; // UI用（PLAY/STOP 表示切替）
+
+    const toggleBtn = document.getElementById("toggle");
+    const skipBtn = document.getElementById("skip");
+    const replayBtn = document.getElementById("replay");
 
     /* =========================
        PC / SP 判定（SPは767px以下）
@@ -236,11 +245,17 @@
     /* =========================
        要素取得
     ========================= */
-    const toggleBtn = document.getElementById("videoToggleBtn");
+    // const toggleBtn = document.getElementById("videoToggleBtn");
     const toggleImg = document.getElementById("videoToggleIcon");
     const vidBtns = document.querySelectorAll("[data-btn]"); // ← SKIP/REPLAY 用
     const mvSP = document.querySelector(".mv-sp");
     const mv = document.querySelector(".mv"); // .playcyu 付与先
+    // new code
+    const mvImage = document.querySelector(".mv-image");
+
+
+
+
 
     /* =========================
        UI更新（PLAY / STOP 画像）
@@ -265,6 +280,40 @@
     function startPlaybackState() { mv?.classList.add("playcyu"); }
     function endPlaybackState() { mv?.classList.remove("playcyu"); }
 
+    // Functions to toggle buttons
+    function showVideoState() {
+      skipBtn?.classList.remove("hidden");
+      replayBtn?.classList.add("hidden");
+    }
+
+    function showCompleteState() {
+  isPlaying = false;
+  renderToggle();
+  endPlaybackState();
+
+  mvImage?.classList.add("show-image");   // show static image
+  mv?.classList.add("hide");             // hide video
+
+  skipBtn?.classList.add("hidden");      // hide Skip
+  replayBtn?.classList.remove("hidden"); // show Replay
+}
+
+
+    skipBtn?.addEventListener("click", showCompleteState);
+    replayBtn?.addEventListener("click", () => {
+      mvImage?.classList.remove("show-image");
+      mvImage?.classList.add("hide");
+      mv?.classList.remove("hide");
+
+      player.accessor.setCurrentTime(0);
+      player.accessor.play();
+      isPlaying = true;
+      renderToggle();
+      startPlaybackState();
+
+      showVideoState();
+    });
+
     /* =========================
        ★ SKIP/REPLAY 機能を無効化
        - ボタンをDOMから消す/非表示にする
@@ -275,9 +324,7 @@
       el.dataset.btn = "";           // 念のため
     });
 
-    /* =========================
-       プレイヤー準備完了
-    ========================= */
+
     player.accessor.addEventListener("landing", () => {
       // 自動再生
       player.accessor.play();
@@ -286,43 +333,45 @@
       renderToggle();
       showToggle();
       startPlaybackState();
+      showVideoState();  
 
       // PLAY / STOP（pause）トグル
       toggleBtn?.addEventListener("click", () => {
-        if (isPlaying) {
-          player.accessor.pause();
-          isPlaying = false;
-          // 停止しても「ループ用のcomplete処理」はそのまま。UIだけ切り替え。
-        } else {
+        // new code
+        if (!isPlaying) {
+          mvImage?.classList.remove("show-image"); // send back
+          mv?.classList.remove("hide");            // show video
+          mvImage?.classList.add("hide");          // hide image
           player.accessor.play();
           isPlaying = true;
+        } else {
+          player.accessor.pause();
+          isPlaying = false;
         }
         renderToggle();
-        // ★ .playcyu は触らない（現仕様維持）
       });
+
     });
+
 
     /* =========================
        ★ 再生完了 → ループ（0秒に戻して再生）
        画像表示・ボタン非表示・REPLAY切替はしない
     ========================= */
+    player.accessor.addEventListener("complete", showCompleteState);
+
     player.accessor.addEventListener("complete", () => {
-      // 停止中なら勝手に再開しない（ユーザーのSTOPを尊重）
-      if (!isPlaying) return;
-
-      // 0秒へ戻して再生
-      player.accessor.setCurrentTime(0);
-      player.accessor.play();
-
-      // 状態は「再生中」維持
-      isPlaying = true;
+      isPlaying = false;
       renderToggle();
-      showToggle();
-      // .playcyu も再生状態維持（触らない）
-      startPlaybackState();
+      endPlaybackState();
 
-      // mvSP の表示切替など「画像表示」系は一切やらない
-      mvSP?.classList.add("hide");
+      // Show static image
+      mvImage?.classList.add("show-image");
+      mv?.classList.add("hide");
+
+      // Skip / Replay button toggle
+      skipBtn?.classList.add("hide");
+      replayBtn?.classList.remove("hide");
     });
   </script>
 
