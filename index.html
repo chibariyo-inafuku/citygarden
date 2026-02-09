@@ -145,7 +145,10 @@
         <li class="top-header-list"><a href="#">分譲宅地ラインナップ</a></li>
       </ul>
     </div> -->
-    <div class="mv-image"> <img src="./assets/img/top/mv.webp" width="1600" height="720" loading="lazy" /> </div>
+    <div class="mv-image"> <img src="./assets/img/top/mv.webp" width="1600" height="720" loading="lazy"
+        class="only-pc" />
+      <img src="./assets/img/top/mv-sp.webp" width="1600" height="720" loading="lazy" class="only-sp" />
+    </div>
 
 
     <div class="loading-video" id="video-loading">
@@ -157,6 +160,7 @@
     <button type="button" id="videoToggleBtn" aria-label="再生/停止"> <img id="videoToggleIcon"
         src="https://tochi.sumitomo-rd.co.jp/wp-content/themes/custom_home/assets/img/movie/play.png" alt="PLAY">
     </button>
+
     <div class="video-btn">
       <button id="skip">SKIP</button>
       <button id="replay" class="hidden replay">REPLAY</button>
@@ -178,7 +182,7 @@
 
     let isPlaying = false; // UI用（PLAY/STOP 表示切替）
 
-    const toggleBtn = document.getElementById("toggle");
+    const toggleBtn = document.getElementById("videoToggleBtn");
     const skipBtn = document.getElementById("skip");
     const replayBtn = document.getElementById("replay");
 
@@ -246,16 +250,13 @@
        要素取得
     ========================= */
     // const toggleBtn = document.getElementById("videoToggleBtn");
+
     const toggleImg = document.getElementById("videoToggleIcon");
     const vidBtns = document.querySelectorAll("[data-btn]"); // ← SKIP/REPLAY 用
     const mvSP = document.querySelector(".mv-sp");
     const mv = document.querySelector(".mv"); // .playcyu 付与先
     // new code
     const mvImage = document.querySelector(".mv-image");
-
-
-
-
 
     /* =========================
        UI更新（PLAY / STOP 画像）
@@ -284,35 +285,55 @@
     function showVideoState() {
       skipBtn?.classList.remove("hidden");
       replayBtn?.classList.add("hidden");
+      showToggle();
     }
 
     function showCompleteState() {
-  isPlaying = false;
-  renderToggle();
-  endPlaybackState();
+      isPlaying = false;
+      renderToggle();
+      endPlaybackState();
 
-  mvImage?.classList.add("show-image");   // show static image
-  mv?.classList.add("hide");             // hide video
+      mvImage?.classList.add("show-image");
+      mv?.classList.add("hide");
 
-  skipBtn?.classList.add("hidden");      // hide Skip
-  replayBtn?.classList.remove("hidden"); // show Replay
-}
+      skipBtn?.classList.add("hidden");
+      replayBtn?.classList.remove("hidden");
+      hideToggle();
+    }
 
 
-    skipBtn?.addEventListener("click", showCompleteState);
+
+
+    // skipBtn?.addEventListener("click", showCompleteState);
+
+    skipBtn?.addEventListener("click", () => {
+      player.accessor.pause();
+      isPlaying = false;
+      renderToggle();
+      endPlaybackState();
+      mvImage?.classList.add("show-image");
+      mvImage?.classList.remove("hide");
+      mv?.classList.add("hide");
+      skipBtn?.classList.add("hidden");
+      replayBtn?.classList.remove("hidden");
+      hideToggle();
+    });
+
+
     replayBtn?.addEventListener("click", () => {
       mvImage?.classList.remove("show-image");
-      mvImage?.classList.add("hide");
       mv?.classList.remove("hide");
 
       player.accessor.setCurrentTime(0);
       player.accessor.play();
+
       isPlaying = true;
       renderToggle();
       startPlaybackState();
-
       showVideoState();
     });
+
+
 
     /* =========================
        ★ SKIP/REPLAY 機能を無効化
@@ -324,6 +345,22 @@
       el.dataset.btn = "";           // 念のため
     });
 
+    // PLAY / STOP（pause）トグル
+
+    toggleBtn?.addEventListener("click", () => {
+      if (!replayBtn?.classList.contains("hidden")) return;
+
+      if (!isPlaying) {
+        player.accessor.play();
+        isPlaying = true;
+      } else {
+        player.accessor.pause();
+        isPlaying = false;
+      }
+      renderToggle();
+    });
+
+
 
     player.accessor.addEventListener("landing", () => {
       // 自動再生
@@ -331,25 +368,9 @@
 
       isPlaying = true;
       renderToggle();
-      showToggle();
+      // showToggle();
       startPlaybackState();
-      showVideoState();  
-
-      // PLAY / STOP（pause）トグル
-      toggleBtn?.addEventListener("click", () => {
-        // new code
-        if (!isPlaying) {
-          mvImage?.classList.remove("show-image"); // send back
-          mv?.classList.remove("hide");            // show video
-          mvImage?.classList.add("hide");          // hide image
-          player.accessor.play();
-          isPlaying = true;
-        } else {
-          player.accessor.pause();
-          isPlaying = false;
-        }
-        renderToggle();
-      });
+      showVideoState();
 
     });
 
@@ -358,21 +379,25 @@
        ★ 再生完了 → ループ（0秒に戻して再生）
        画像表示・ボタン非表示・REPLAY切替はしない
     ========================= */
-    player.accessor.addEventListener("complete", showCompleteState);
+    // player.accessor.addEventListener("complete", showCompleteState);
 
     player.accessor.addEventListener("complete", () => {
       isPlaying = false;
       renderToggle();
       endPlaybackState();
 
+
+
       // Show static image
       mvImage?.classList.add("show-image");
       mv?.classList.add("hide");
 
       // Skip / Replay button toggle
-      skipBtn?.classList.add("hide");
-      replayBtn?.classList.remove("hide");
+      skipBtn?.classList.add("hidden");
+      replayBtn?.classList.remove("hidden");
+      hideToggle();
     });
+
   </script>
 
 
